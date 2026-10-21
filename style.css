@@ -1,0 +1,9 @@
+body {
+    font-family: "Courier New", monospace;
+    background-color: rgb(74, 13, 23);
+    color: rgb(255, 251, 251);
+}
+h1 {
+    color: rgb(92, 249, 254);
+    font-size: 40px;
+}
