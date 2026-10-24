@@ -1,9 +1,13 @@
 body {
     font-family: "Courier New", monospace;
-    background-color: rgb(74, 13, 23);
-    color: rgb(255, 251, 251);
+    background-color: #0F172A;
+    color: #F8FAFC;
 }
 h1 {
-    color: rgb(92, 249, 254);
+    color: #484bf5;
     font-size: 40px;
+}
+
+h2 {
+    color: #38BDF8;
 }
