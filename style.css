@@ -1,13 +1,73 @@
 body {
-    font-family: "Courier New", monospace;
-    background-color: #0F172A;
-    color: #F8FAFC;
+    font-family: "roboto", monospace;
+    background-color: #00190a;
+    color: #c3ffcd;
+    padding: 20px 40px;
 }
 h1 {
-    color: #484bf5;
-    font-size: 40px;
+    color: #1df212;
+    font-size: 50px;
 }
 
 h2 {
-    color: #38BDF8;
+    color: #1df212;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.carta{
+    width: 300px;
+    background-color: #0e3a27;
+    border-radius: 10px;
+    border: 5px solid #000000;
+    padding: 40px;
+}
+
+.carta img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.description {
+    display:inline-flexbox;
+    background-color: #c1fae1;
+    color: #000000;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.raridade {
+    display:inline-flexbox;
+    background-color: #c1fae1;
+    color: #146b1e;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.atributos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* ===== Raridades: a segunda classe muda a cor ===== */
+.epica { border-color: #980184; }
+.epica .raridade { background-color: #d796ce; }
+
+.lendaria { border-color: #ffd66b; }
+.lendaria .raridade { background-color: #ffd66b; }
+
+/* ===== Animação: a carta brilha com o mouse ===== */
+.carta:hover {
+    animation: brilhar 1s infinite;
+}
+
+.colecao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
