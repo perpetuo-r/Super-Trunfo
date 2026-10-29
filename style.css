@@ -1,37 +1,41 @@
 body {
     font-family: "roboto", monospace;
-    background-color: #00190a;
-    color: #c3ffcd;
+    background-color: #000000;
+    color: #ffffff;
     padding: 20px 40px;
 }
 h1 {
-    color: #1df212;
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 70px;
+    outline-width: 2px;
+    outline-color: #000000;
 }
 
 h2 {
-    color: #1df212;
-    font-size: 40px;
+    color: #f9fff8;
+    font-size: 35px;
     padding: 10px;
+    outline-width: 2px;
+    outline-color: #000000;
 }
 
 .carta{
-    width: 300px;
-    background-color: #0e3a27;
+    width: 250px;
+    background-color: #4c4d4d;
     border-radius: 10px;
     border: 5px solid #000000;
     padding: 40px;
 }
 
 .carta img{
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 280px;
     object-fit: cover;
 }
 
 .description {
     display:inline-flexbox;
-    background-color: #c1fae1;
+    background-color: #fdfdfd;
     color: #000000;
     border-radius: 10px;
     font-size: 20px;
@@ -40,9 +44,9 @@ h2 {
 .raridade {
     display:inline-flexbox;
     background-color: #c1fae1;
-    color: #146b1e;
+    color: #000000;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     font-size: 20px;
 }
 
@@ -50,7 +54,7 @@ h2 {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* ===== Raridades: a segunda classe muda a cor ===== */
