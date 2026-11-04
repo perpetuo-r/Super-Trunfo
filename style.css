@@ -64,6 +64,9 @@ h2 {
 .lendaria { border-color: #ffd66b; }
 .lendaria .raridade { background-color: #ffd66b; }
 
+.rara { border-color: #78d9ff; }
+.rara .raridade { background-color: #78d9ff; }
+
 /* ===== Animação: a carta brilha com o mouse ===== */
 .carta:hover {
     animation: brilhar 1s infinite;
