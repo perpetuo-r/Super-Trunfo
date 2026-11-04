@@ -69,6 +69,15 @@ h2 {
     animation: brilhar 1s infinite;
 }
 
+@keyframes brilhar {
+    0% { transform: scale(1)
+    rotate(0deg);}
+    50% { transform: scale(1.05)
+    rotate(-2deg);}
+    100% { transform: scale(1)
+    rotate(0deg);}
+}
+
 .colecao {
     display: flex;
     flex-wrap: wrap;
