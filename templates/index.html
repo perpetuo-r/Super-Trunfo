@@ -2,10 +2,15 @@
 <html>
     <head>
         <title>Super Trunfo: Jojo's bizarre adventure</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="static/css/style.css">
     </head>
     <body>
         <h1>Super Trunfo: Jojo's bizarre adventure</h1>
+        <p>
+            <a class="botao" href="/pacotinho">Abrir pacotinho</a>
+            <a class="botao" href="/regras">Ver as regras do jogo</a>
+            <a class="botao" href="{{url_for('criar')}}">crie uma nova carta </a>
+        </p>
         <p class = "description">
             Criei um conceito de super trunfo do anime Jojo's bizarre adventure, 
             com cartas baseadas nos personagens do anime e suas habilidades.
@@ -14,7 +19,7 @@
     <div class="colecao">
         <div class="carta epica">
             <h2> Jotaro Kujo</h2>
-            <img src="images/jotaro.jpg"
+            <img src="./static/images/jotaro.jpg"
                 alt="https://www.pinterest.com/h_underscore/jotaro-kujo/"
                 width="300">
             
@@ -26,11 +31,12 @@
                 <li>defesa/vida : 80</li>
                 <li>velocidade: 40</li>
             </ul>
+            <a class="botao" href="/duelo/Jotaro">Duelar</a>
         </div> 
 
         <div class = "carta lendaria">
             <h2> Dio Brando</h2>
-            <img src="images/dio.jpeg"
+            <img src="./static/images/dio.jpeg"
                 alt="https://www.pinterest.com/pin/40813940368343327/"
                 width="300">
             
@@ -42,21 +48,24 @@
                 <li>defesa/vida : 60</li>
                 <li>velocidade: 80</li>
             </ul>               
+            <a class="botao" href="/duelo/Dio">Duelar</a>
         </div>
         
         <div class = "carta rara">
             <h2> Joseph Joestar</h2>
-            <img src="images/joseph.jpeg"
+            <img src="static/images/joseph.jpeg"
                 alt="https://www.pinterest.com/pin/40813940368343327/"
                 width="300">         
             
             <p class = "raridade">raridade: rara</p>
 
             <ul class = "atributos">
-                <li>força: 60</li>
+                <li>força: 65</li>
                 <li>habilidades/poderes: 95</li>
-                <li>defesa/vida : 60</li>
-                <li>velocidade: 80</li>               
+                <li>defesa/vida : 80</li>
+                <li>velocidade: 60</li>   
+            </ul>            
+            <a class="botao" href="/duelo/Joseph">Duelar    </a>            
     </div>
     </body>
 </html>
