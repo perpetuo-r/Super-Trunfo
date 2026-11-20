@@ -7,30 +7,30 @@ app = Flask(__name__)
 cartas = {
     "Jotaro" : {
                     "nome" : "Jotaro Kujo",
-                    "img" : "./static/images/jotaro.jpg",
-                    "raridade" : "Épica",
+                    "img" : "jotaro.jpg",
+                    "raridade" : "epica",
                     "força" : 90,
-                    "habilidades/poderes" : 85,
-                    "defesa/vida": 80,
+                    "habilidades_poderes" : 85,
+                    "defesa_vida": 80,
                     "velocidade": 40,
                 },
     "Dio" : {
                     "nome" : "Dio Brando",
-                    "img" : "./static/images/dio.jpeg",
-                    "raridade" : "Lendária",
+                    "img" : "dio.jpeg",
+                    "raridade" : "lendaria",
                     "força" : 60,
-                    "habilidades/poderes" : 95,
-                    "defesa/vida": 60,
+                    "habilidades_poderes" : 95,
+                    "defesa_vida": 60,
                     "velocidade": 80,
                 },
 
     "Joseph" : {
                     "nome" : "Joseph Joestar",
-                    "img" : "./static/images/joseph.jpeg",
+                    "img" : "joseph.jpeg",
                     "raridade" : "rara",
                     "força" : 65,
-                    "habilidades/poderes" : 95,
-                    "defesa/vida": 80,
+                    "habilidades_poderes" : 95,
+                    "defesa_vida": 80,
                     "velocidade": 60,
                 },
 
@@ -84,7 +84,7 @@ def resultado(carta, atributo):
     else:
         resultado = "Empate!"
 
-    poder_total = minha["força"] + minha["habilidades/poderes"] + minha["defesa/vida"] + minha["velocidade"]
+    poder_total = minha["força"] + minha["habilidades_poderes"] + minha["defesa_vida"] + minha["velocidade"]
 
     return render_template("resultado.html",
                            atributo=atributo,
@@ -103,14 +103,14 @@ def carta_criada():
     imagem = request.form["imagem"]
     raridade = request.form["raridade"]
     força = int(request.form["força"])
-    habilidades_poderes = int(request.form["habilidades/poderes"])
-    defesa_vida = int(request.form["defesa/vida"])
+    habilidades_poderes = int(request.form["habilidades_poderes"])
+    defesa_vida = int(request.form["defesa_vida"])
     velocidade = int(request.form["velocidade"])
 
     # A carta nova também entra no duelo (até o servidor reiniciar!)
     chave = nome.lower().replace(" ", "-")
     cartas[chave] = {"nome": nome, "imagem": imagem, "raridade": raridade,
-                     "força": força, "habilidades/poderes": habilidades_poderes, "defesa/vida": defesa_vida, "velocidade": velocidade}
+                     "força": força, "habilidades_poderes": habilidades_poderes, "defesa_vida": defesa_vida, "velocidade": velocidade}
 
     poder_total = força + habilidades_poderes + defesa_vida + velocidade
     return render_template("carta_criada.html",
@@ -118,3 +118,4 @@ def carta_criada():
                            força=força, habilidades_poderes=habilidades_poderes, defesa_vida=defesa_vida, velocidade=velocidade,
                            poder_total=poder_total)
 
+app.run(debug=True)
